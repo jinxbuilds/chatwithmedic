@@ -5,7 +5,16 @@ It gives plain-language answers, asks follow-up questions, and flags emergencies
 
 > **Disclaimer:** Informational only. Not a substitute for professional medical advice, diagnosis, or treatment.
 
-## Run
+## Web version (Vercel)
+
+`web/` is a Next.js port built for Vercel (Streamlit can't run there). Import this repo in Vercel with **Root Directory** `web`:
+
+- no environment variables: demo with recorded sample conversations
+- `ANTHROPIC_API_KEY`: live streaming chat with Claude
+
+See [`web/README.md`](web/README.md).
+
+## Run (Streamlit)
 
 ```bash
 python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
